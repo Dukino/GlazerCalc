@@ -24,7 +24,7 @@ namespace GlazerCalc
 
         private bool ValidateDimensions(object sender, RoutedEventArgs e)
         {
-            bool isEmpty = string.IsNullOrWhiteSpace(WidthInput.Text) && string.IsNullOrWhiteSpace(HeightInput.Text);
+            bool isEmpty = string.IsNullOrWhiteSpace(WidthInput.Text) || string.IsNullOrWhiteSpace(HeightInput.Text);
             if(isEmpty)
             {
                 DisplayInvalidDimensionsDialog();
